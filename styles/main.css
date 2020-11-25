@@ -47,8 +47,8 @@ body {
 }
 
 .year {
-  width: 40px;
-  padding: 2px;
+  width: 35%;
+  padding: 5px;
   font-size: 12px;
   background-color: #c5e09b;
   text-align: center;
@@ -82,7 +82,7 @@ body {
   display: inline-block;
   background-color: #ffffff;
   margin: 0 0px 22px 22px;
-  height: 450px;
+  height: 480px;
   vertical-align: top;
 }
 
@@ -138,9 +138,8 @@ div.card__text {
 }
 
 .image__wrapper img{
-  width: 200px;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .mission-id-list{
@@ -171,7 +170,7 @@ div.card__text {
     margin-left: 15%;
     display: block;
     margin-right: 0;
-    padding: 5px;
+    padding: 8px;
     margin-right: 14%;
   }
 
