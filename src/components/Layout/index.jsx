@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import Programs from "./programs";
+import Programs from "./Programs";
 import Filter from "./Filter";
 
 const index = memo(({ programs }) => {
