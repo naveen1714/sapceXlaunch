@@ -82,6 +82,8 @@ body {
   display: inline-block;
   background-color: #ffffff;
   margin: 0 0px 22px 22px;
+  height: 450px;
+  vertical-align: top;
 }
 
 .card:hover {
@@ -159,6 +161,10 @@ div.card__text {
     margin-bottom: 15px;
   }
 
+  .year__filter{
+    display: table;
+    width: 100%;
+  }
   .year {
     width: 20%;
     float: left;
