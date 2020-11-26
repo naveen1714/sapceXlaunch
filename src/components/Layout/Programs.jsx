@@ -13,26 +13,29 @@ const Programs = memo(({ program }) => {
 
       <div className="container">
         <div className="mission__heading">{`${program.mission_name} #${program.flight_number}`}</div>
-        <div className="card__text">Mission Ids:</div>
-        <div className="list__wraper">
-          {program.mission_id && program.mission_id.length > 0 && (
-            <ul className="mission-id-list color-blue" id="mission-id-list">
-              {program.mission_id.map((id, index) => (
-                <li key={index}>{id}</li>
-              ))}
-            </ul>
-          )}
+        <div className="mission_wrapper">
+          <div className="card__text">Mission Ids:</div>
+          <div className="list__wraper">
+            {program.mission_id && program.mission_id.length > 0 && (
+              <ul className="mission-id-list color-blue" id="mission-id-list">
+                {program.mission_id.map((id, index) => (
+                  <li key={index}>{id}</li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
+
         <div className="card__text">
           Launch Year: <span>{program.launch_year || "N/A"}</span>
         </div>
         <div className="card__text">
-          Successful Launch:{" "}
-          <span>{program.launch_success ? "true" : "false"}</span>
+          <div className="successful__quote"> Successful Launch: </div>
+          <div className="successful__quote__text">{program.launch_success ? "true" : "false"}</div>
         </div>
         <div className="card__text">
-          Successful Landing:{" "}
-          <span>{program.launch_landing ? "true" : "false"}</span>
+          <div className="successful__quote"> Successful Landing: </div>
+          <div className="successful__quote__text">{program.launch_landing ? "true" : "false"}</div>
         </div>
       </div>
     </div>

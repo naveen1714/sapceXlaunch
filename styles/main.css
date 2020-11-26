@@ -82,7 +82,7 @@ body {
   display: inline-block;
   background-color: #ffffff;
   margin: 0 0px 22px 22px;
-  height: 480px;
+  height: auto;
   vertical-align: top;
 }
 
@@ -138,7 +138,8 @@ div.card__text {
 }
 
 .image__wrapper img{
-  width: 100%;
+  width: 80%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -149,6 +150,22 @@ div.card__text {
 }
 .list__wraper{
   height: 35px;
+}
+.mission_wrapper{
+  height: 50px;
+}
+
+.successful__quote{
+  display: inline-block;
+  width: 50px;
+}
+
+.successful__quote__text{
+  vertical-align: top;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 100;
+    color: #555c9d;
 }
 @media(max-width:767px) {
 
@@ -178,5 +195,8 @@ div.card__text {
     content: "";
     display: block;
     clear: both;
+  }
+  .heading{
+    font-size: 40px;
   }
 }
